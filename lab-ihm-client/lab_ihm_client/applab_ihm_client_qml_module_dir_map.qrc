@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/lab_ihm_client">/home/cytech-student/Bureau/ING3/IHMEmbarquee/lab-ihm-client/lab_ihm_client</file>
+
+  </qresource>
+</RCC>

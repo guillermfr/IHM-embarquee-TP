@@ -1,0 +1,34 @@
+{
+    "classes": [
+        {
+            "className": "Sender",
+            "lineNumber": 9,
+            "object": true,
+            "qualifiedClassName": "Sender",
+            "slots": [
+                {
+                    "access": "private",
+                    "index": 0,
+                    "lineNumber": 19,
+                    "name": "onConnected",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 1,
+                    "lineNumber": 20,
+                    "name": "onReadyRead",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "sender.h",
+    "outputRevision": 69
+}

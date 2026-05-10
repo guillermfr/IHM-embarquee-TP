@@ -1,0 +1,315 @@
+[
+    {
+        "classes": [
+            {
+                "className": "LoginBackend",
+                "lineNumber": 8,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "ip_address",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "port",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "username",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "password",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "lineNumber": 15,
+                        "name": "login",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "LoginBackend",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 24,
+                        "name": "loginSuccess",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "error",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 25,
+                        "name": "loginFailed",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 2,
+                        "lineNumber": 19,
+                        "name": "onConnected",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 3,
+                        "lineNumber": 20,
+                        "name": "onLoginSuccess",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "error",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 21,
+                        "name": "onLoginFailed",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "loginbackend.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "MainBackend",
+                "lineNumber": 10,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "messageContent",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "receiverId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 22,
+                        "name": "sendChatMessage",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "lineNumber": 23,
+                        "name": "logout",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "userId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 3,
+                        "isConst": true,
+                        "lineNumber": 28,
+                        "name": "getPrivateMessages",
+                        "returnType": "QJsonArray"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 13,
+                        "name": "users",
+                        "notify": "historyUpdated",
+                        "override": false,
+                        "read": "getUsers",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QJsonArray",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 14,
+                        "name": "globalMessages",
+                        "notify": "historyUpdated",
+                        "override": false,
+                        "read": "getGlobalMessages",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QJsonArray",
+                        "user": false,
+                        "virtual": false
+                    }
+                ],
+                "qualifiedClassName": "MainBackend",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 41,
+                        "name": "historyUpdated",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "mainbackend.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "TcpManager",
+                "lineNumber": 8,
+                "object": true,
+                "qualifiedClassName": "TcpManager",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 19,
+                        "name": "connected",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "lineNumber": 21,
+                        "name": "loginSuccess",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "reason",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 22,
+                        "name": "loginFailed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "users",
+                                "type": "QJsonArray"
+                            },
+                            {
+                                "name": "messages",
+                                "type": "QJsonArray"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 23,
+                        "name": "historyReceived",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "messageContent",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "senderId",
+                                "type": "int"
+                            },
+                            {
+                                "name": "receiverId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 24,
+                        "name": "chatMessageReceived",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 5,
+                        "lineNumber": 27,
+                        "name": "onConnected",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 6,
+                        "lineNumber": 28,
+                        "name": "onReadyRead",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "error",
+                                "type": "QAbstractSocket::SocketError"
+                            }
+                        ],
+                        "index": 7,
+                        "lineNumber": 29,
+                        "name": "onError",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "tcpmanager.h",
+        "outputRevision": 69
+    }
+]

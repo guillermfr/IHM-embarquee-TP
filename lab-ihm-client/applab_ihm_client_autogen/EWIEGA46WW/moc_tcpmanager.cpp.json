@@ -1,0 +1,114 @@
+{
+    "classes": [
+        {
+            "className": "TcpManager",
+            "lineNumber": 8,
+            "object": true,
+            "qualifiedClassName": "TcpManager",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "lineNumber": 19,
+                    "name": "connected",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "lineNumber": 21,
+                    "name": "loginSuccess",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "reason",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 2,
+                    "lineNumber": 22,
+                    "name": "loginFailed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "users",
+                            "type": "QJsonArray"
+                        },
+                        {
+                            "name": "messages",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 3,
+                    "lineNumber": 23,
+                    "name": "historyReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "messageContent",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "senderId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "receiverId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 4,
+                    "lineNumber": 24,
+                    "name": "chatMessageReceived",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "index": 5,
+                    "lineNumber": 27,
+                    "name": "onConnected",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 6,
+                    "lineNumber": 28,
+                    "name": "onReadyRead",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "error",
+                            "type": "QAbstractSocket::SocketError"
+                        }
+                    ],
+                    "index": 7,
+                    "lineNumber": 29,
+                    "name": "onError",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "tcpmanager.h",
+    "outputRevision": 69
+}

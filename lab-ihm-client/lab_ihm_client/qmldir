@@ -1,0 +1,9 @@
+module lab_ihm_client
+typeinfo applab_ihm_client.qmltypes
+prefer :/qt/qml/lab_ihm_client/
+Main 254.0 Main.qml
+Login_page 254.0 Login_page.qml
+Main_interface 254.0 Main_interface.qml
+Admin_interface 254.0 Admin_interface.qml
+depends QtQuick
+
